@@ -15,7 +15,7 @@ function getData() {
       email: 'johndoe@example.com'
     };
   
-    fetch('db.json', {
+    fetch('https://gitjasin.github.io/github-test-site/data/db.json', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
