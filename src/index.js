@@ -1,13 +1,10 @@
 // Function to fetch data from the server
 function getData() {
-    fetch('')
+    fetch('https://gitjasin.github.io/github-test-site/data/db.json')
       .then(response => response.json())
       .then(data => {
         document.getElementById('output').innerText = JSON.stringify(data);
       })
-      .catch(error => {
-        console.error('Error:', error);
-      });
   }
   
   // Function to post data to the server
